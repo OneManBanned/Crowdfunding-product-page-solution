@@ -1,0 +1,83 @@
+/* ThankYouModal MOBILE */
+
+#completeModal {
+    background-color: #ffffff;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    top: 21.5vh;
+    width: 85%;
+    text-align: center;
+    border: none;
+    border-radius: .75em;
+    padding: 10% 8%;
+}
+
+#completeModal>* {
+    margin-block-end: 8%;
+}
+
+#completeModal>img {
+    width: 18vw;
+}
+
+#completeModal>h2 {
+    font-size: clamp(0.85rem, 0.06rem + 4.5141vw, 1.75rem);
+    font-weight: 700;
+}
+
+#completeModal>p {
+    color: var(--Dark-gray);
+    font-size: clamp(0.6rem, 0.0295rem + 3.2602vw, 1.25rem);
+    line-height: 175%;
+    margin-block-end: 15%;
+}
+
+#gotIt {
+    color: white;
+    font-weight: 500;
+    font-size: clamp(0.6rem, -0.0144rem + 3.511vw, 1.3rem);
+    border-radius: 2rem;
+    padding: 7% 15%;
+    background-color: hsl(176, 50%, 47%);
+    transition: background-color .25s ease-in-out;
+    border: none;
+    margin-block-end: 0;
+}
+
+/* PLEDGE DESKTOP */
+
+@media (min-width: 37.5rem) {
+
+    /* LAYOUT */
+
+    #completeModal {
+        width: 40%;
+        padding: 3.75% 2.75%;
+    }
+
+    #completeModal>img {
+        width: 6.75vw;
+        margin-block-end: 10.75%;
+    }
+
+    #completeModal>h2 {
+        font-size: clamp(0.75rem, 0.0882rem + 1.7647vw, 3rem);
+        margin-block-end: 3.25%;
+    }
+
+    #completeModal>p {
+        font-size: clamp(0.45rem, -0.0059rem + 1.2157vw, 2rem);
+        line-height: 181%;
+        margin-block-end: 7%;
+    }
+
+    #gotIt {
+        padding: 4% 8%;
+        border-radius: 3em;
+        font-size: clamp(0.45rem, 0.0676rem + 1.0196vw, 1.75rem);
+    }
+
+    #gotIt:hover {
+        background-color: hsl(176, 72%, 28%);
+    }
+}
