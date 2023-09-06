@@ -281,6 +281,10 @@ input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
 
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
 .err {
     color: red;
     margin-block-end: 1rem;
