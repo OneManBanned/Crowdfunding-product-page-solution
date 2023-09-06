@@ -1,4 +1,4 @@
-import c from '/campaign.js'
+import c from './campaign.js'
 
 const amountRaised = document.querySelector('.progressAmount')
 const progressBar = document.querySelector('.--progress-bar-progress')

@@ -1,5 +1,5 @@
-import c from '/campaign.js'
-import { updateStats } from '/statsDisplay.js'
+import c from './campaign.js'
+import { updateStats } from './statsDisplay.js'
 
 const pledgeDiv = document.querySelectorAll('.--pledge-div')
 const modalPledgeDiv = document.querySelectorAll('.pledgeModal-div')
