@@ -3,10 +3,10 @@ import c from '/campaign.js'
 const amountRaised = document.querySelector('.progressAmount')
 const progressBar = document.querySelector('.--progress-bar-progress')
 const backers = document.querySelector('.backers')
-const pledgePackagesLeftMain = document.querySelectorAll('.pledge-div-stats')
-const pledgePackagesLeftModel = document.querySelectorAll('.pledgePackage')
+const pledgePackagesLeftMain = document.querySelectorAll('.pledgePackage')
+const pledgePackagesLeftModal = document.querySelectorAll('.pledgeModal-div-stats')
 
-const packagesDisplay = [...pledgePackagesLeftMain, ...pledgePackagesLeftModel]
+const packagesDisplay = [...pledgePackagesLeftMain, ...pledgePackagesLeftModal]
 const options = { style: 'decimal', currency: 'usd' }
 
 function updateStats() {
@@ -17,5 +17,6 @@ function updateStats() {
         pack.innerHTML = `${c.backerPackages[pack.dataset.pledge]}<span>left</span>`
     })
 }
+
 
 export { updateStats }

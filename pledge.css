@@ -24,7 +24,7 @@ dialog::backdrop {
     color: var(--Dark-gray);
 }
 
-.pledgeModal-div-header>p {
+.pledgeModal-div-header>label>span {
     color: hsl(176, 50%, 47%);
     font-weight: 500;
 }
@@ -85,7 +85,6 @@ dialog::backdrop {
     background-color: transparent;
 }
 
-
 .pledgeModal-div {
     border: 1px solid hsla(0, 0%, 48%, .4);
     padding: 9% 8%;
@@ -105,17 +104,23 @@ dialog::backdrop {
     margin-block-end: 8%;
 }
 
-div .first>h3 {
+div .first>label {
     margin-bottom: 0;
     align-self: center;
 }
 
-.pledgeModal-div-header>h3 {
-    margin-block-end: 4%;
+.pledgeModal-div-header>label {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-weight: 800;
+    gap: .5rem;
+    transition: color .15s ease-in-out;
 }
 
-.pledgeModal-div-header>h3,
-.pledgeModal-div-header>p {
+.pledgeModal-div-header>label,
+.pledgeModal-div-header>label>span {
     font-size: clamp(0.65rem, 0.0795rem + 3.2602vw, 1.3rem);
 }
 
@@ -146,6 +151,7 @@ input[type='radio'] {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: border-color .25s ease-in-out;
 }
 
 input[type="radio"]::before {
@@ -162,12 +168,12 @@ input[type="radio"]:checked::before {
     transform: scale(1);
 }
 
-.pledgeModal-div-header>h3 {
+.pledgeModal-div-header>label {
     grid-row: 1/2;
     grid-column: 2/3;
 }
 
-.pledgeModal-div-header>p {
+.pledgeModal-div-header>label>span {
     grid-row: 2/3;
     grid-column: 2/3;
 }
@@ -286,8 +292,8 @@ input[type=number]::-webkit-inner-spin-button {
 
     /* TYPOGRAPHY */
 
-    .pledgeModal-div-header>h3,
-    .pledgeModal-div-header>p {
+    .pledgeModal-div-header>label,
+    .pledgeModal-div-header>label>span {
         margin: 0;
         padding: 0;
         font-size: clamp(0.5rem, 0.0588rem + 1.1765vw, 2rem);
@@ -330,8 +336,13 @@ input[type=number]::-webkit-inner-spin-button {
         height: 1.75vw;
     }
 
-    div .first>h3 {
+    div .first>label {
         align-self: flex-start;
+    }
+
+    .pledgeModal-div-header>label {
+        flex-direction: row;
+        gap: 2vw;
     }
 
     .pledgeModal-div-header:not(.first)>input {
@@ -344,7 +355,7 @@ input[type=number]::-webkit-inner-spin-button {
         padding: 0;
         margin: 0;
         display: flex;
-        column-gap: 1vw;
+        column-gap: 2vw;
     }
 
     .pledgeModal-div-header>* {
@@ -469,15 +480,6 @@ input[type=number]::-webkit-inner-spin-button {
         font-size: clamp(0.4rem, -0.0412rem + 1.1765vw, 1.9rem);
     }
 
-    .hthree:hover {
-        color: hsl(176, 50%, 47%);
-        cursor: pointer;
-    }
-
-    .hthree:hover+p {
-        font-weight: 700;
-    }
-
     .continue:hover {
         background-color: hsl(176, 72%, 28%);
     }
@@ -486,4 +488,18 @@ input[type=number]::-webkit-inner-spin-button {
         outline-color: hsl(176, 50%, 47%);
     }
 
+    input[name='radioGroup']:hover {
+        border: 1px solid hsl(176, 50%, 47%);
+    }
+
+    input[name='radioGroup']:hover,
+    .hthree:hover {
+        cursor: pointer;
+        color: hsl(176, 50%, 47%);
+    }
+
+    input[disabled]:hover {
+        border: 1px solid hsla(0, 0%, 48%, .4);
+        cursor: default;
+    }
 }
