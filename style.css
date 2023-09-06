@@ -291,6 +291,10 @@ h1 {
     transform: rotate(-90deg);
 }
 
+.bookmarkDivChecked #bookmark {
+    transform: rotate(-90deg);
+}
+
 #bookFill.bookmarked {
     fill: hsl(176, 72%, 28%);
 }
