@@ -23,7 +23,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: www.frontendmentor.io/solutions/crowdfunding-product-page-solution-IlgNJpcG_I
-- Live Site URL: onemanbanned.github.io/Crowdfunding-product-page-solution
+- Live Site URL: [onemanbanned.github.io/Crowdfunding-product-page-solution](https://onemanbanned.github.io/Crowdfunding-product-page-solution/)
 
 ### Built with
 
