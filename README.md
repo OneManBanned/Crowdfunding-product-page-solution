@@ -22,8 +22,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: https://onemanbanned.github.io/Crowdfunding-product-page-solution
+- Solution URL: www.frontendmentor.io/solutions/crowdfunding-product-page-solution-IlgNJpcG_I
+- Live Site URL: www.onemanbanned.github.io/Crowdfunding-product-page-solution
 
 ### Built with
 
